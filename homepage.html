@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+   <style type="text/css">
+
+        .logo{
+                width: 100px;
+                cursor: pointer;
+            }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+    
+        }
+
+
+        nav ul li a{
+        text-decoration: none;
+       color:black;
+        font-weight: bold;
+        }
+
+        nav ul li a:hover{
+        color: red;
+        }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.background1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+  
+}
+span{
+    color: yellow;
+    font-size: 30px;
+    
+}
+
+.images{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100;
+    transform: translateX(-30%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .girl{
+    left: 55%;
+}
+.intro{
+  padding-left: 8%;
+}
+.intro h1{
+  padding-left: 20%;
+  color: black;
+  font-size: 70px;
+  padding-top: 5%;
+
+}
+.intro p{
+    padding-top: 20px;
+    color: black ;
+    padding-left: 20%;
+    font-size: 20px;
+}
+
+
+   </style>
+
+</head>
+<body style= "background-color:  grey;">
+    <div class="background1">
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fix4SYDhD77EUi8qGruuEdmt5Fq2q22Sew&usqp=CAU" class="logo">
+            <ul>
+                <li><a href="homepage.html">HOME PAGE</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="contactUS.html">CONTACT US</a></li>
+        </nav>
+      <div class="intro"> 
+
+        <h1>Hello <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNuLnXmCUVszo-LHhPwKnhpxyLJaHj1Gk7A&usqp=CAU" width="80px">  </h1>
+          <p>  I'm <span><strong>Ervin</strong> </span> <br>This is my official personal website.</p>
+        </div>
+      
+        <div class="images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbDF-GL6nSo2N1HKjTWt5XG7oV81topDSoIA&usqp=CAU" class="boy">
+        </div>
+    </div>
+</body>
+</html>
